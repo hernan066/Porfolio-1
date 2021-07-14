@@ -85,10 +85,18 @@ section{
 .btn:hover{
     background: #235bf6;
   }
+  
+  .media-icons{
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+   
+  
   .media-icons a{
     color: #fff;
     font-size: 25px;
     margin-right: 30px;
+    
   }
   header{
       z-index: 999;
@@ -272,7 +280,7 @@ section{
   }
   .skills .content .col-right .bar .html:before{
     width: 90%;
-    background: #e45126;
+    background: #0c73b8;
     animation: html 3s ;
     
   }
@@ -301,7 +309,7 @@ section{
 }
   .skills .content .col-right .bar .javascript:before{
     width: 75%;
-    background: #e3a324;
+    background: #0c73b8;
     animation: javascript 3s ;
   }
   @keyframes javascript{
@@ -314,7 +322,7 @@ section{
 }
   .skills .content .col-right .bar .node:before{
     width: 70%;
-    background: #30dd6d;
+    background: #0c73b8;
     animation: node 3s ;
   }
   @keyframes node{
@@ -327,7 +335,7 @@ section{
 }
   .skills .content .col-right .bar .mysql:before{
     width: 80%;
-    background: #6d7eb8;
+    background: #0c73b8;
     animation: mysql 3s ;
   }
   @keyframes mysql{
@@ -495,8 +503,46 @@ section{
   }
   
   .footer p a{
-    color: black;
+    color: #3a6cf4;
     font-weight: 600;
     text-decoration: none;
   }
   
+  /*  +++++++++++++++++++++++++++Scroll++++++++++++++++++++++++++++++ */
+
+  .scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: #3a6cf4;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

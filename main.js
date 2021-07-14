@@ -1,10 +1,10 @@
-           //javascript for navigation bar effects on scroll
+           //javascript efecto header
 window.addEventListener("scroll", function(){
   const header = document.querySelector("header");
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
-//javascript for responsive navigation sidebar menu
+//javascript  responsive menu
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 const navigationItems = document.querySelectorAll(".navigation a")
@@ -21,20 +21,20 @@ navigationItems.forEach((navigationItem) => {
   });
 });
 
-//javascript for scroll to top button
+//javascript activa boton scroll
 const scrollBtn = document.querySelector(".scrollToTop-btn");
 
 window.addEventListener("scroll", function(){
   scrollBtn.classList.toggle("active", window.scrollY > 500);
 });
 
-//javascript for scroll back to top on click scroll-to-top button
+//javascript lleva hasta arriba al oprimir boton scroll
 scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
 
-//javascript for reveal website elements on scroll
+//javascript efecto reveal
 window.addEventListener("scroll", reveal);
 
 function reveal(){
